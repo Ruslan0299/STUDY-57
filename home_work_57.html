@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SQL</title>
+  </head>
+  <body>
+    <p>\sql</p>
+    <p>\connect root@localhost</p>
+    <p>SHOW databases</p>
+    <p>CREATE DATABASE shop;</p>
+    <p>USE shop;</p>
+    <p>> CREATE TABLE shop (
+        -> PRODUCT VARCHAR(30),
+        -> Price SMALLINT,
+        -> rating DECIMAL(3,2),
+        -> category VARCHAR(15),
+        -> brand VARCHAR(20));</p>
+    <p>DESRIBE shop</p>
+    <p>ALTER TABLE shop ADD id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY;</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('iphone 9', '549', '4.69', 'smartphones', 'Apple');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('iphone X', '899', '4.44', 'smartphones', 'Apple');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('Samsung Universe 9', '1249', '4.09', 'smartphones', 'Samsung');</p>
+    <p> INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('OPPO F19', '280', '4.3', 'smartphones', 'OPPO');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('Huawei P30', '280', '4.09', 'smartphones', 'Huawei');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('MacBook Pro', '1149', '4.57', 'laptop', 'Apple');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('Samsung Galaxy Book', '1499', '4.25', 'laptops', 'Sumsung');</p>
+    <p> INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('Microsoft Surface Laptop4', '1499', '4.43', 'laptops', 'Microsoft Surface');</p>
+    <p> INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('Infinix INBOOK', '1099', '4.54', 'laptops', 'Infinix');</p>
+    <p>INSERT INTO shop(PRODUCT, Price, rating, category, brand) VALUES ('HP Pavilion 15-DK1056WM', '1099', '4.43', 'laptops', 'HP Pavilion');</p>
+    <p> SELECT *FROM shop;</p>
+    <p> SELECT Price, brand FROM shop WHERE brand="Apple";</p>
+    <p>SELECT Price FROM shop WHERE price < 1000; </p>
+    <p> SELECT price FROM shop WHERE price BETWEEN "500" AND "1500";</p>
+    <p>SELECT Product,Price,rating FROM shop WHERE brand IN("Apple","Samsung","Huawei");</p>
+    <p> SELECT PRODUCT,category FROM shop WHERE PRODUCT LIKE"%Samsung%";</p>
+    <p><img src="/assets/SharedScreenshot.jpg" alt=""></p>
+    <p><img src="/assets/SharedScreenshot2.jpg" alt=""></p>
+    <p><img src="/assets/SharedScreenshot3.jpg" alt=""></p>
+    <p><img src="/assets/SharedScreenshot4.jpg" alt=""></p>
+    <p><img src="/assets/SharedScreenshot5.jpg" alt=""></p>
+    <p><img src="/assets/SharedScreenshot6.jpg" alt=""></p>
+    <p style="font-size: 50px
+    ;">Вибачте що в такому вигляді, але зіткнувся зі шквалом проблем пов'язаних з встановленням та використанням My SQL. </p>
+   
+  </body>
+</html>
